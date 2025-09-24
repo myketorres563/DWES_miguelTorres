@@ -36,6 +36,53 @@ if ($esVerdad) {
 }
 echo "Colores favoritos: " . implode(", ", $colores) . ".<br>";
 echo "Marca de mi coche: " . $miCoche->marca . ".<br>";
-var_dump($vacio); 
+var_dump($vacio);
+echo "<br>";
+
+
+
+    echo "Probar el ambito de las variables<br>";
+
+    echo "Ambito Global<br><br>";
+
+    // Ámbito global
+    $variableGlobal = "Soy una variable global"; // Ámbito global
+function miFuncion() {
+    global $variableGlobal; // Ámbito global
+
+    echo $variableGlobal . "<br>";
+}
+
+miFuncion();
+
+
+
+echo "Ambito Local<br><br>";
+    // Ámbito local
+function otraFuncion() {
+    $y = 5; // Ámbito local
+    echo $y;
+}
+
+otraFuncion(); // Imprime: 5
+// echo $y; // Error: $y no está definida fuera de la función
+
+
+
+
+
+echo "Ambito Estatica<br><br>";
+    // Variable estática
+function contador() {
+    static $contador = 0; // Persiste su valor entre llamadas
+    $contador++;
+    echo $contador;
+}
+
+contador(); // Imprime: 1
+contador(); // Imprime: 2
+contador(); // Imprime: 3
+
+
 
 ?>

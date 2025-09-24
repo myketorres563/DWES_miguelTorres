@@ -15,4 +15,12 @@ Actualización de la nueva configuración de carpetas
 
 Esta captura del Programa1.php despues de declarar unos tipos de variables y mostrarlos
 
-![1758704111054](image/Entrega1/1758704111054.png)
+![]()![1758705960274](image/Entrega1/1758705960274.png)
+
+#### Ámbitos de las Variables
+
+Podemos encontrar diferentes ámbitos:
+
+- Global: Variables definidas fuera de cualquier función
+- Local: Variables definidas dentro de una función
+- Estático: Variables locales que persisten su valor entre llamadas a la función usando static
