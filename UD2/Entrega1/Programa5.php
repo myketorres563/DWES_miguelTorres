@@ -13,40 +13,42 @@
     <h1>Estudio de cadenas y secuencias de escape en PHP</h1>
 
     <?php
-        // Ejemplos con comillas dobles (interpreta escapes)
-        $dobles = "Hola\nMundo\t(esto está tabulado)\nComilla doble: \"  Barra invertida: \\  Variable: \$valor";
+        $valor = 123;
 
-        // Ejemplos con comillas simples (no interpreta escapes, salvo \' y \\)
-        $simples = 'Hola\nMundo\t(esto aparece literal)\nComilla simple: \'  Barra invertida: \\  Variable: $valor';
+        // Comillas dobles: interpreta escapes y variables
+        $dobles = "Ejemplo con comillas dobles:\n- Salto de línea (\n)\n- Tabulación (\t)\tAquí\n- Comilla doble (\")\n- Barra invertida (\\)\n- Variable: \$valor = $valor";
+
+        // Comillas simples: muestra escapes y variables literalmente
+        $simples = 'Ejemplo con comillas simples:\n- Salto de línea (\\n)\n- Tabulación (\\t)\tAquí\n- Comilla simple (\')\n- Barra invertida (\\)\n- Variable: $valor';
 
         // Unicode y Hex
-        $unicode = "Avión: \u{2708} (símbolo avión)";
-        $hex     = "Códigos hexadecimales: \x41\x42\x43 = ABC";
+        $unicode = "Símbolos Unicode: Corazón \u{2665}, Avión \u{2708}";
+        $hex     = "Hexadecimal: \x48\x6F\x6C\x61 = Hola";
 
-        // Heredoc (interpreta escapes)
-        $heredoc = <<<TEXT
-Cadena con heredoc:
-- Nueva línea \n (se interpreta)
-- Tabulación \t (se interpreta)
-- Variable \$unicode: $unicode
-TEXT;
+        // Heredoc: interpreta escapes y variables
+        $heredoc = <<<EOT
+Ejemplo con heredoc:
+- Nueva línea (\n) y tabulación (\t)
+- Variable \$valor: $valor
+- Unicode: $unicode
+EOT;
 
-        // Nowdoc (no interpreta escapes)
-        $nowdoc = <<<'TEXT'
-Cadena con nowdoc:
-- Nueva línea \n (literal)
-- Tabulación \t (literal)
-- Variable $unicode (no sustituida)
-TEXT;
+        // Nowdoc: no interpreta escapes ni variables
+        $nowdoc = <<<'EOT'
+Ejemplo con nowdoc:
+- Nueva línea (\n) y tabulación (\t)
+- Variable $valor (no sustituida)
+- Unicode: \u{2665} \u{2708}
+EOT;
     ?>
 
-    <h2>Con comillas dobles</h2>
+    <h2>Comillas dobles</h2>
     <pre><?php echo $dobles; ?></pre>
 
-    <h2>Con comillas simples</h2>
+    <h2>Comillas simples</h2>
     <pre><?php echo $simples; ?></pre>
 
-    <h2>Unicode y Hex</h2>
+    <h2>Unicode y Hexadecimal</h2>
     <pre><?php echo $unicode . "\n" . $hex; ?></pre>
 
     <h2>Heredoc</h2>

@@ -35,20 +35,17 @@ Podemos encontrar diferentes ámbitos:
 
 Como podemos ver en el Programa 2 abajo en el apartado de echo faltaba poner $nombre y arriba quedaba por asignarle un valor a la variable en este caso "Miguel Torres"
 
-
 #### Diferentes ejemplos usando echo y print
 
 ![1758800734632](image/Entrega1/1758800734632.png)
 
 ![1758800758702](image/Entrega1/1758800758702.png)
 
-
 #### Printf y especificadores de tipo
 
 ![1758801013262](image/Entrega1/1758801013262.png)
 
 ![1758801025590](image/Entrega1/1758801025590.png)
-
 
 ## Programa 3
 
@@ -60,7 +57,6 @@ Esto permite formatear los datos de forma clara y profesional para su presentaci
 
 ![1758801202730](image/Entrega1/1758801202730.png)
 
-
 ## Programa 4
 
 ![1758801490519](image/Entrega1/1758801490519.png)
@@ -69,9 +65,7 @@ Como podemso ver en los printf ya hemos cambiado los signos de interrogación po
 
 ![1758801532994](image/Entrega1/1758801532994.png)
 
-Esto es lo que mostraria la pagina una vez cambiado 
-
-
+Esto es lo que mostraria la pagina una vez cambiado
 
 Aqui podemos ver la diferencia de printf y sprintf
 
@@ -79,5 +73,59 @@ Aqui podemos ver la diferencia de printf y sprintf
 
 ![1758802934416](image/Entrega1/1758802934416.png)
 
-
 ## Programa 5
+
+![1759145922377](image/Entrega1/1759145922377.png)
+
+Unas de las cosas vistas en el programa 5 es la diferencia de la utilización de las comillas simples y dobles
+
+## Programa 6
+
+![1759145855433](image/Entrega1/1759145855433.png)
+
+En el programa 6 hemos usado nuevos elementos como el unset y algunos mas
+
+![1759146438734](image/Entrega1/1759146438734.png)
+
+Añadimos estas lieneas de codigo para ocultar el warning
+
+## Programa 7
+
+![1759147041509](image/Entrega1/1759147041509.png)
+
+Aqui estamos viendo las constantes y viendo las diferentes formas de declararlas y como declararlas de forma correcta
+
+![1759147066143](image/Entrega1/1759147066143.png)
+
+Este seria el resultado del codigo de arriba
+
+## Programa 8
+
+![1759148318735](image/Entrega1/1759148318735.png)
+
+![1759148337732](image/Entrega1/1759148337732.png)
+
+Como podemos ver podemos ver varias tablas con un titulo cada uno y unos valores variados viendo variables, cosntantes propias, predefinidas
+
+## Programa 9
+
+![1759148943001](image/Entrega1/1759148943001.png)
+
+Como podemos ver Date permite obtener la fecha y hora actual en diferentes formatos mientras getdate devueve un array asociado con los datos de las fechas de cuando se añadieron los datos
+
+![1759148950740](image/Entrega1/1759148950740.png)
+
+## Programa 10
+
+![1759149146569](image/Entrega1/1759149146569.png)
+
+En este programa tenemos que rellenar los huecos de codigo vacios
+
+![1759149180321](image/Entrega1/1759149180321.png)
+
+
+## Programa 10Sim
+
+![1759149664358](image/Entrega1/1759149664358.png)
+
+![1759149672642](image/Entrega1/1759149672642.png)
