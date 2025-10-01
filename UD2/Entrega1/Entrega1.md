@@ -123,9 +123,10 @@ En este programa tenemos que rellenar los huecos de codigo vacios
 
 ![1759149180321](image/Entrega1/1759149180321.png)
 
-
 ## Programa 10Sim
 
 ![1759149664358](image/Entrega1/1759149664358.png)
 
 ![1759149672642](image/Entrega1/1759149672642.png)
+
+![1759306606787](image/Entrega1/1759306606787.png)
