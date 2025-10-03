@@ -43,3 +43,20 @@ Como podemos ver a la edad le hemos declarado un valor y despues en el array pon
 ![1759310216057](image/Entrega2/1759310216057.png)
 
 ![1759310231572](image/Entrega2/1759310231572.png)
+
+## Programa 20 - En grupo (Miguel Torres & Dani Castro)
+
+En este programa hemos visto el uso de varias funciones nativas de PHP que facilitan tareas comunes como trabajar con cadenas de texto, fechas, números y arrays. Gracias a ellas podemos simplificar el código y hacerlo más legible y eficiente.
+
+* `strlen()` → devuelve el número de caracteres de una cadena.
+* `strtoupper()` → convierte un string a mayúsculas.
+* `strtolower()` → convierte un string a minúsculas.
+* `substr()` → obtiene una subcadena desde una posición.
+* `date()` → devuelve la fecha y hora en el formato especificado.
+* `number_format()` → da formato numérico con decimales y separadores.
+* `rand()` → genera un número aleatorio.
+* `array_sum()` → suma todos los valores numéricos de un array.
+* `in_array()` → comprueba si un valor está en un array.
+* `implode()` → convierte un array en una cadena.
+
+![1759493850662](image/Entrega2/1759493850662.png)
