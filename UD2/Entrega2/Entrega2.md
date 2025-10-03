@@ -60,3 +60,5 @@ En este programa hemos visto el uso de varias funciones nativas de PHP que facil
 * `implode()` → convierte un array en una cadena.
 
 ![1759493850662](image/Entrega2/1759493850662.png)
+
+![1759494537470](image/Entrega2/1759494537470.png)
