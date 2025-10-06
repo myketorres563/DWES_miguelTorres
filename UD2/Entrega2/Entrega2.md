@@ -44,7 +44,23 @@ Como podemos ver a la edad le hemos declarado un valor y despues en el array pon
 
 ![1759310231572](image/Entrega2/1759310231572.png)
 
-## Programa 20 - En grupo (Miguel Torres & Dani Castro)
+## Programa 16
+
+![1759749613149](image/Entrega2/1759749613149.png)
+
+## Programa 17
+
+![1759495609822](image/Entrega2/1759495609822.png)
+
+## Programa 18
+
+![1759749629605](image/Entrega2/1759749629605.png)
+
+## Programa 19
+
+![1759751051921](image/Entrega2/1759751051921.png)
+
+## Programa 20 - En grupo (Miguel Torres & Dani Castro & Miguel Anguel Quevedo)
 
 En este programa hemos visto el uso de varias funciones nativas de PHP que facilitan tareas comunes como trabajar con cadenas de texto, fechas, números y arrays. Gracias a ellas podemos simplificar el código y hacerlo más legible y eficiente.
 
