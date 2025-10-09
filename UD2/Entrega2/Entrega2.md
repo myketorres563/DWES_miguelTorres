@@ -78,3 +78,63 @@ En este programa hemos visto el uso de varias funciones nativas de PHP que facil
 ![1759493850662](image/Entrega2/1759493850662.png)
 
 ![1759494537470](image/Entrega2/1759494537470.png)
+
+## Array
+
+El array es un tipo de dato que nos permite almacenar varios valores, cada mienbro del array se almacena en una posición a la que se hacer referencia utiliznado un valor clave.
+
+Los arrays pueden ser númericos o asociativos
+
+- Si en los parametros no se indica los valores claves el array es numerico
+- Si no se pasa ningun valor el array es vacio
+
+## Programa 21
+
+![1759754075839](image/Entrega2/1759754075839.png)
+
+![1759754091285](image/Entrega2/1759754091285.png)
+
+## Programa 22
+
+![1759754629799](image/Entrega2/1759754629799.png)
+
+![1759754638679](image/Entrega2/1759754638679.png)
+
+## Programa 23
+
+![1759755174917](image/Entrega2/1759755174917.png)
+
+![1759755187732](image/Entrega2/1759755187732.png)
+
+## Programa 24
+
+![1759910649949](image/Entrega2/1759910649949.png)
+
+![1759910636756](image/Entrega2/1759910636756.png)
+
+## Formularios
+
+## Programa 25
+
+![1759911523469](image/Entrega2/1759911523469.png)
+
+![1759911577629](image/Entrega2/1759911577629.png)
+
+![1759911551145](image/Entrega2/1759911551145.png)
+
+![1759911563984](image/Entrega2/1759911563984.png)
+
+## Programa 28
+
+![1759914515416](image/Entrega2/1759914515416.png)
+
+![1759914535134](image/Entrega2/1759914535134.png)
+
+
+## Programa 29
+
+![1759914679708](image/Entrega2/1759914679708.png)
+
+Podemos ver que en el codigo ahi comentado un Warming para que veamos que si en el apartado de señalar los modulos si no señalas ninguno y envias el formulario salta un Warming
+
+![1759914759823](image/Entrega2/1759914759823.png)
