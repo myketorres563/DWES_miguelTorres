@@ -32,7 +32,7 @@ Son como cajas donde se guardan varios valores
 
 - Array Asociativo / Numéricos
   - Numéricos: Sus valores son numeros
-  - Asociativos: Son nonbres en vez de números
+  - Asociativos: Son nombres en vez de números
 - Array Multidimensionales
   - Son array dentro de otros arrays
 - Recorrer Arrays
