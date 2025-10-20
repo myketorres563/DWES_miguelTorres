@@ -1,0 +1,64 @@
+<?php
+// Crear una nueva pila
+$stack = new SplStack();
+// Añadir elementos a la pila
+echo "<br><b> Clase SplStack: </b><br>";
+
+
+
+
+// Añadir elementos a la pila
+$stack->push("Primer elemento");
+$stack->push("Segundo elemento");
+$stack->push("Tercer elemento");
+
+
+// Desapilar elementos (se eliminarán en orden inverso)
+echo $stack->pop(); // Output: Tercer elemento
+echo "\n";
+echo $stack->pop(); // Output: Segundo elemento
+echo "\n";
+echo $stack->pop(); // Output: Primer elemento
+
+
+
+
+
+
+echo "<br><b> Clase SplQueue: </b><br>";
+
+
+$queue = new SplQueue();
+$queue->enqueue("Primer elemento");
+$queue->enqueue("Segundo elemento");
+$queue->enqueue("Tercer elemento");
+echo $queue->dequeue(); // Output: Primer elemento
+echo "<br>";
+echo $queue->dequeue(); // Output: Segundo elemento
+echo "<br>";
+echo $queue->dequeue(); // Output: Tercer elemento      
+echo "<br>";
+
+
+
+
+echo "<br><b> Clase SplFileObject: </b><br>";
+$file = new SplFileObject('monolog.txt', 'r');
+
+
+// iterate over its contents
+while (!$file->eof()) {
+    // get the current line
+    $line  =  $file->fgets();
+    echo "LINEA: ". $line . "<br>";
+    // trim it, and then check if its empty
+    if (empty(trim($line))) {
+        // skips the current iteration
+        continue;
+    }
+}
+
+
+
+
+?>
