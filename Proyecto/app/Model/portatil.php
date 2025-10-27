@@ -1,5 +1,6 @@
 <?php
-class portatil extends equipos{
+namespace Proyecto\App\Model;
+final class portatil extends equipos{
     private $tamanoPantalla;
     private $bateria;
 
@@ -7,6 +8,10 @@ class portatil extends equipos{
         parent::__construct($modelo, $marca, $precio);
         $this->tamanoPantalla = $tamanoPantalla;
         $this->bateria = $bateria;
+    }
+    
+    public function getDescripcionTecnica(): string {
+        return "Portátil con pantalla de {$this->tamanoPantalla} y batería de {$this->bateria}.";
     }
 
     public function getTamanoPantalla() {
@@ -21,6 +26,6 @@ class portatil extends equipos{
     public function setBateria($bateria) {
         $this->bateria = $bateria;
     }
-    
+
 }
 ?>

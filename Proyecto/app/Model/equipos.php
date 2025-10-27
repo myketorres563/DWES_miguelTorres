@@ -1,8 +1,11 @@
 <?php
-    class equipos{
+namespace Proyecto\App\Model;
+    abstract class equipos{ 
         private $modelo;
         private $marca;
         private $precio;
+
+        abstract public function getDescripcionTecnica(): string;
 
         public function __construct($modelo, $marca, $precio) {
             $this->modelo = $modelo;

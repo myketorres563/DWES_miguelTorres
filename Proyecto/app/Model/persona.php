@@ -1,4 +1,5 @@
 <?php
+namespace Proyecto\App\Model;
 class persona
 {
     private $nombre;

@@ -1,4 +1,8 @@
 <?php
+use Proyecto\App\Model\persona;
+use Proyecto\App\Model\equipos;
+use Proyecto\App\Model\portatil;
+use Proyecto\App\Model\sobremesa;
 session_start();
 
 require_once __DIR__ . '/../Model/persona.php';

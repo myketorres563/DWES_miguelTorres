@@ -1,4 +1,8 @@
 <?php
+use Proyecto\App\Model\persona;
+use Proyecto\App\Model\equipos;
+use Proyecto\App\Model\portatil;
+use Proyecto\App\Model\sobremesa;
 require_once __DIR__ . '/app/Model/persona.php';
 require_once __DIR__ . '/app/Model/equipos.php';
 require_once __DIR__ . '/app/Model/portatil.php';
@@ -34,7 +38,6 @@ foreach ($personasConPedidos as $registro) {
     echo "Marca: " . $e->getMarca() . "<br>";
     echo "Precio: " . $e->getPrecio() . "<br>";
 
-    // Comprobar tipo de equipo
     if ($e instanceof portatil) {
         echo "Tamaño pantalla: " . $e->getTamanoPantalla() . "<br>";
         echo "Batería: " . $e->getBateria() . "<br>";

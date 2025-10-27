@@ -1,5 +1,6 @@
 <?php
-class sobremesa extends equipos{
+namespace Proyecto\App\Model;
+final class sobremesa extends equipos{
 
     private $tipoTorre;
     private $grafica;
@@ -8,6 +9,10 @@ class sobremesa extends equipos{
         parent::__construct($modelo, $marca, $precio);
         $this->tipoTorre = $tipoTorre;
         $this->grafica = $grafica;
+    }
+    
+    public function getDescripcionTecnica(): string {
+        return "Sobremesa con torre {$this->tipoTorre} y tarjeta gráfica {$this->grafica}.";
     }
 
     public function getTipoTorre() {
@@ -22,6 +27,6 @@ class sobremesa extends equipos{
     public function setGrafica($grafica) {
         $this->grafica = $grafica;
     }
-    
+
 }
 ?>
