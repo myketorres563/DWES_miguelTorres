@@ -22,7 +22,6 @@ $personasConPedidos = [
     ['persona' => $persona2, 'pedido' => $pedido2],
 ];
 
-// Mostrar los datos
 foreach ($personasConPedidos as $registro) {
     $p = $registro['persona'];
     $e = $registro['pedido'];
@@ -38,13 +37,9 @@ foreach ($personasConPedidos as $registro) {
     echo "Marca: " . $e->getMarca() . "<br>";
     echo "Precio: " . $e->getPrecio() . "<br>";
 
-    if ($e instanceof portatil) {
-        echo "Tamaño pantalla: " . $e->getTamanoPantalla() . "<br>";
-        echo "Batería: " . $e->getBateria() . "<br>";
-    } elseif ($e instanceof sobremesa) {
-        echo "Tipo torre: " . $e->getTipoTorre() . "<br>";
-        echo "Gráfica: " . $e->getGrafica() . "<br>";
-    }
+    echo $e->getDescripcionTecnica() . "<br>";
 
-    echo "<hr>";
+
 }
+
+?>

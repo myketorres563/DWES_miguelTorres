@@ -6,8 +6,7 @@ class persona
     private $direccion;
     private $telefono;
     private $pago;
-    public function __construct($nombre, $direccion, $telefono, $pago)
-    {
+    public function __construct($nombre, $direccion, $telefono, $pago){
         $this->nombre = $nombre;
         $this->direccion = $direccion;
         $this->telefono = $telefono;
