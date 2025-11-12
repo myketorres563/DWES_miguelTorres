@@ -76,8 +76,6 @@ Este codigo es el ejemplo de una mala practica para insertar datos a la base de 
 
 ## PDO(PHP Data Objects)
 
-
-
 ## Programa3
 
 ![1761832123945](image/entrega5/1761832123945.png)
@@ -95,3 +93,71 @@ Este es el archivo php de la conexion
 ![1761832195513](image/entrega5/1761832195513.png)
 
 Y este es el archivo que hace las consultas y las muestra
+
+# Programa 4
+
+![1762940256818](image/entrega5/1762940256818.png)
+
+Esta es la estructura de mi Progarma 4 donde podemos ver los archivos y carpetas creadas para este
+
+![1762940307547](image/entrega5/1762940307547.png)
+
+Que es un login que cuando te logueas te lleva a la paginaprincipal
+
+# Programa 5
+
+![1762940381583](image/entrega5/1762940381583.png)
+
+Esta es la estructura de este Programa y en el te muestra un listado de coches parecido al del programa 6
+
+
+
+# Program 6
+
+![1762938335549](image/entrega5/1762938335549.png)
+
+Vamos a añadir un jugador
+
+![1762938362807](image/entrega5/1762938362807.png)
+
+Despues cuando nos vamos al archivo el jugador a sido añadido
+
+# Programa 7
+
+### Ejemplo1
+
+![1762939333634](image/entrega5/1762939333634.png)
+
+Despues de ejecutarlo se nos crearia un archivo .txt
+
+![1762939364061](image/entrega5/1762939364061.png)
+
+
+## Ejemplo2
+
+![1762939410067](image/entrega5/1762939410067.png)
+
+
+![1762939422840](image/entrega5/1762939422840.png)
+
+### Ejemplo3
+
+![1762939562650](image/entrega5/1762939562650.png)
+
+Nos añade una nueva linea al .txt
+
+![1762939553463](image/entrega5/1762939553463.png)
+
+## Ejemplo4
+
+![1762939703135](image/entrega5/1762939703135.png)
+
+Cuando ejecutamos esto se nos descarga un CSV
+
+![1762939733009](image/entrega5/1762939733009.png)
+
+# Programa8
+
+![1762941972844](image/entrega5/1762941972844.png)
+
+Se me mostraria esto
