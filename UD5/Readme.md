@@ -50,6 +50,36 @@ Lo que esta haciendo este programa es rederigirnos a lo que tenemos escrito en e
 
 ### 5
 
-### 6
+![1763123051291](image/Readme/1763123051291.png)
+
+Este programa es para que se guraden las cookies
+
+![1763123043630](image/Readme/1763123043630.png)
+
+![1763123554228](image/Readme/1763123554228.png)
+
+Despues este otro codigo sirver para mostrar la ultima sesion
+
+![1763123592370](image/Readme/1763123592370.png)
+
+### 6![1763124140163](image/Readme/1763124140163.png)
+
+Como  podemos ver lo que te muestra en la pantalla se gurada como cookies
+
+![1763124130519](image/Readme/1763124130519.png)
+
+![1763124269488](image/Readme/1763124269488.png)
+
+![1763124260879](image/Readme/1763124260879.png)
 
 ### 7
+
+![1763547144132](image/Readme/1763547144132.png)
+
+Esta es la estructura de la ultima actividad echa en clase donde tocamos el login el logout y hemos visto paso a paso como se inicia sesion y los pasos que da.
+
+## Punto 2 Sesiones
+
+![1763122423124](image/Readme/1763122423124.png)
+
+Cuando inicias sesion con session_start php envia una cookio al navegador con un ID unico
