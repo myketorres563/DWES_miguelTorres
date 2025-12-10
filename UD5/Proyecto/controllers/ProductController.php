@@ -98,33 +98,33 @@ class ProductController
      * Actualizar producto (con IVA incluido)
      */
     public function update(): void
-    {
-        $this->requireLogin();
+{
+    $this->requireLogin();
 
-        $id = isset($_POST['id']) ? (int)$_POST['id'] : 0;
-        $name = trim($_POST['nombre'] ?? '');
-        $priceStr = trim($_POST['precio'] ?? '');
-        $stockStr = trim($_POST['stock'] ?? '');
+    $id = isset($_POST['id']) ? (int)$_POST['id'] : 0;
+    $name = trim($_POST['nombre'] ?? '');
+    $priceStr = trim($_POST['precio'] ?? '');
+    $stockStr = trim($_POST['stock'] ?? '');
 
-        if ($name === '' || $priceStr === '' || $stockStr === '') {
-            $error = 'Todos los campos son obligatorios.';
-            $product = ['id' => $id, 'nombre' => $name, 'precio' => $priceStr, 'stock' => $stockStr];
-            $action = 'update';
-            require __DIR__ . '/../views/product/form.php';
-            return;
-        }
-
-        $price = (float)$priceStr;
-        $stock = (int)$stockStr;
-
-        // Sumar IVA del 21%
-        $priceConIva = round($price * 1.21, 2);
-
-        Product::update($this->pdo, $id, $name, $priceConIva, );
-
-        header('Location: index.php?c=product&a=index');
-        exit;
+    if ($name === '' || $priceStr === '' || $stockStr === '') {
+        $error = 'Todos los campos son obligatorios.';
+        $product = [ 'id' => $id, 'nombre' => $name, 'precio' => $priceStr, 'stock' => $stockStr];
+        $action = 'update';
+        require __DIR__ . '/../views/product/form.php';
+        return;
     }
+
+    $price = (float)$priceStr;
+    $stock = (int)$stockStr;
+
+    $priceConIva = round($price * 1.21, 2);
+
+    Product::update($this->pdo, $name, $priceConIva, $stock,);
+
+    header('Location: index.php?c=product&a=index');
+    exit;
+}
+
 
     /**
      * Eliminar producto

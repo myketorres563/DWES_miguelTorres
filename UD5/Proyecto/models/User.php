@@ -5,8 +5,9 @@ class User
 {
     public int $id;
     public string $username;
-    public string $password;   // <-- CORREGIDO
+    public string $password;   
 
+    // Busca un usuario por nombre de usuario
     public static function findByUsername(PDO $pdo, string $username): ?User
     {
         $stmt = $pdo->prepare('SELECT * FROM users WHERE username = :u LIMIT 1');
@@ -20,9 +21,10 @@ class User
         $user = new User();
         $user->id = (int)$row['id'];
         $user->username = $row['username'];
-        $user->password = $row['password'];   // <-- CORREGIDO
+        $user->password = $row['password']; 
 
         return $user;
     }
+
 }
 ?>

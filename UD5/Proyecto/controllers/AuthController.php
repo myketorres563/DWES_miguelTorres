@@ -43,14 +43,12 @@ class AuthController
         return;
     }
 
-    // --- SESIÓN (lo mantienes) ---
     $_SESSION['user'] = [
         'id' => $user->id,
         'username' => $user->username,
     ];
 
-    // --- AÑADIR COOKIE ---
-    // Guarda el nombre del usuario durante 1 hora
+
     setcookie("usuario", $user->username, time() + 3600, "/");
 
     header('Location: index.php?c=product&a=index');
@@ -78,7 +76,6 @@ class AuthController
                 $params['httponly']
             );
         }
-        setcookie("usuario", "", time() - 3600, "/");
         session_destroy();
         header('Location: index.php?c=auth&a=login');
         exit;

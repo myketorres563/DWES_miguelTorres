@@ -15,10 +15,9 @@ CREATE TABLE IF NOT EXISTS users (
 
 // Usuario admin
 $adminPass = password_hash("admin", PASSWORD_DEFAULT);
-$stmt = $db->prepare("INSERT OR IGNORE INTO users (username, password, rol) VALUES (?, ?, ?)");
 $stmt->execute(['admin', $adminPass, 'admin']);
 
-// Otros 2 usuarios: Pedro y Luis con contraseña "1234"
+// Otros 2 usuarios
 $pedroPass = password_hash("1234", PASSWORD_DEFAULT);
 $stmt->execute(['Pedro', $pedroPass, 'user']);
 

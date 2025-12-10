@@ -12,20 +12,18 @@
     <table class="table">
         <thead>
 <tr>
-    <th>ID</th>
     <th>Nombre</th>
     <th>Precio (€)</th>
-    <th>Stock</th> <!-- Nueva columna -->
+    <th>Stock</th>
     <th>Acciones</th>
 </tr>
 </thead>
 <tbody>
 <?php foreach ($products as $p): ?>
     <tr>
-        <td><?= htmlspecialchars($p['id']) ?></td>
         <td><?= htmlspecialchars($p['nombre']) ?></td>
         <td><?= number_format((float)$p['precio'], 2, ',', '.') ?></td>
-        <td><?= htmlspecialchars($p['stock']) ?></td> <!-- Nuevo dato -->
+        <td><?= htmlspecialchars($p['stock']) ?></td>
         <td>
             <a href="index.php?c=product&a=edit&id=<?= urlencode($p['id']) ?>">Editar</a>
             <a href="index.php?c=product&a=delete&id=<?= urlencode($p['id']) ?>"
