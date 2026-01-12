@@ -26,7 +26,7 @@ Fundamentos sobre MVC ([Video](https://www.youtube.com/watch?v=kV2jUg-iXYw&list=
 
 ![1764595322264](image/Readme-Teoria/1764595322264.png)
 
-Como podemos ver ya estamos en el navegador 
+Como podemos ver ya estamos en el navegador
 
 ![1764596087522](image/Readme-Teoria/1764596087522.png)
 
@@ -37,3 +37,19 @@ Como podemos ver los archivos que hay en vista acaban en ".blade.php"
 ![1764597048379](image/Readme-Teoria/1764597048379.png)
 
 Despues dentro de app encontramos http y dentro los controller y despues models que encontramos user
+
+
+## CRUD Laravel Basico
+
+![1768220181386](image/Readme-Teoria/1768220181386.png)
+
+Primero nos descargamos la estructuras de carpetas de laravel
+
+![1768220650517](image/Readme-Teoria/1768220650517.png)
+
+![1768221296396](image/Readme-Teoria/1768221296396.png)
+
+![1768222000798](image/Readme-Teoria/1768222000798.png)
+
+
+![1768222735272](image/Readme-Teoria/1768222735272.png)
