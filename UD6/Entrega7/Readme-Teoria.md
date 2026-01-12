@@ -38,7 +38,6 @@ Como podemos ver los archivos que hay en vista acaban en ".blade.php"
 
 Despues dentro de app encontramos http y dentro los controller y despues models que encontramos user
 
-
 ## CRUD Laravel Basico
 
 ![1768220181386](image/Readme-Teoria/1768220181386.png)
@@ -49,7 +48,65 @@ Primero nos descargamos la estructuras de carpetas de laravel
 
 ![1768221296396](image/Readme-Teoria/1768221296396.png)
 
-![1768222000798](image/Readme-Teoria/1768222000798.png)
-
-
 ![1768222735272](image/Readme-Teoria/1768222735272.png)
+
+
+## Preguntas
+
+¿El código es legible y está bien organizado?
+
+Sí, el código es legible y está organizado en controladores, vistas y rutas, lo que hace que sea más fácil de entender.
+
+
+
+¿Los nombres de las variables y métodos son descriptivos?
+
+Si os nombres indican para qué sirve cada variable o método.
+
+
+
+¿Las vistas son fáciles de entender?
+
+Sí, las vistas se entienden bien y el HTML está ordenado, por lo que es fácil saber qué muestra cada página.
+
+
+
+¿Los formularios están protegidos?
+
+Sí, los formularios están protegidos contra ataques básicos gracias al uso de @csrf.
+
+
+
+¿Has incluido @csrf y @method('PUT'/'DELETE') donde corresponde?
+
+Sí, se han usado correctamente en los formularios que actualizan o eliminan datos.
+
+
+
+¿Hay validación del lado del servidor en store() y update()?
+
+Sí, se valida la información antes de guardarla o actualizarla para evitar datos incorrectos.
+
+
+
+¿Hay validación del lado del cliente?
+
+Sí, se usan atributos básicos como required o tipos de input adecuados para ayudar al usuario.
+
+
+
+¿Estás usando Route::resource() correctamente?
+
+Sí, se usa Route::resource() para agrupar las rutas y facilitar la organización del proyecto.
+
+
+
+¿Hay rutas sin usar?
+
+Creo que no.
+
+
+
+¿Podrías reutilizar código con parciales (_form.blade.php)?
+
+Sí, sería buena idea usar un formulario reutilizable para evitar repetir código en las vistas de crear y editar.
