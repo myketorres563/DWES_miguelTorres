@@ -2,43 +2,42 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
-class DatabaseSeeder extends Seeder
+class UserSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      */
-
     public function run(): void
     {
-        User::factory(10)->create();
-
-            // Aqui vamos a añadir los diferentes Seeders que creemos
-            // User::UserSeeder::class; "Ejemplo de llamada a otro seeder"
-
-
+          // Using model factories to create users, let´s create an admin user first 
+        // This is useful for setting up an initial user with specific credentials
         User::factory()->create([
-            'name' => 'Derek Rosa',
-            'email' => 'cambioBreve@example.com',
+            'name' => 'admin',
+            'email' => 'admin@fcorios.com',
         ]);
 
+        // Using model factories to create 10 random users
+        // This is useful for populating the database with sample data for testing or development purposes
+        //You can find the User factory in database/factories/UserFactory.php
+        //Laravel User factory brings by default.
+        User::factory(10)->create();
 
 
-         //Using DB facade to insert data directly
+        //Using DB facade to insert data directly
         // This is an alternative to using model factories
         // and allows for quick seeding of the database without needing to define a factory.
         // It is useful for simple seed data or when you want to quickly populate the database with
         // some initial data without the overhead of creating a factory.
 
         // seed the users table with 10 random users
+        /* v1: Just an example of how to seed users with random data through DB facade*/
         for ($i = 0; $i < 10; $i++) {
             DB::table('users')->insert([
                 'name' => Str::random(10),
@@ -47,15 +46,5 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        // seed the products table with 12 random products
-
-        for ($i = 0; $i < 12; $i++) {
-        DB::table('clothing_items')->insert([
-            'name' => Str::random(10),
-            'size' => Str::random(5), // Assuming size is a string
-            'price' => rand(10, 100),
-            'color' => Str::random(5), // Assuming color is a string
-        ]);
-        }
     }
 }
