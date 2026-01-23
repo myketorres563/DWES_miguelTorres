@@ -1,4 +1,4 @@
-Primero tenemos que crear la carpeta del poryecto
+dePrimero tenemos que crear la carpeta del poryecto
 
 ![1768986821623](image/README/1768986821623.png)
 
@@ -14,14 +14,13 @@ Y ahora modificamos la migracion de create_orders_table e insertamos los atribut
 
 ![1768987836526](image/README/1768987836526.png)
 
-
 Como podemos ver la base de datos se ha creado correctamente
 
 ![1769087039272](image/README/1769087039272.png)
 
 Ahora nos vamo al App/model y modificamos los archivos
 
-Añadimos $fillable para permitir guardar datos y la relación orders 
+Añadimos $fillable para permitir guardar datos y la relación orders
 
 ![1769087130443](image/README/1769087130443.png)
 
@@ -76,3 +75,39 @@ Ahora nos volvemos al archivo anterior y le damos funcionalidad a la funcion "sh
 Y tambien creamos su show.blade.php
 
 ![1769088578288](image/README/1769088578288.png)
+
+Y ahora cuando le das a ver
+
+![1769173465533](image/README/1769173465533.png)
+
+Ahora seguiremos con ClientController y añadimos la en create la vista
+
+![1769174769918](image/README/1769174769918.png)
+
+Ahora creamos la vista dentro de la carpeta clients
+
+![1769174864289](image/README/1769174864289.png)
+
+Ahora volvemos al ClientController y rellenamos el store
+
+![1769174947523](image/README/1769174947523.png)
+
+Y ahora cuando nos vallamos al navegador y vallamos a la opcion de crear cliente nos llevaria hasta esta ventana
+
+![1769175092752](image/README/1769175092752.png)
+
+Ahora apadimos la vista de edit
+
+![1769175275193](image/README/1769175275193.png)
+
+Ahora en el edit.blade.php añadirmos el codigo de lo que cargaria en el navegador
+
+![1769175356393](image/README/1769175356393.png)
+
+Y ahora tendriamos que añadirle funcionalidad a la funcion update
+
+![1769175541849](image/README/1769175541849.png)
+
+Y ahora mismo tendriamos el CRUD completo de cliente
+
+![1769175464820](image/README/1769175464820.png)
