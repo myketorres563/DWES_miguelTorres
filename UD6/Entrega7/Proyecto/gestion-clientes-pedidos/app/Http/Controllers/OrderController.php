@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Client;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -10,9 +11,11 @@ class OrderController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+   public function index()
     {
-        //
+        // Traemos los pedidos con sus clientes (Eager Loading para optimizar)
+        $orders = Order::with('client')->get();
+        return view('orders.index', compact('orders'));
     }
 
     /**
@@ -20,7 +23,9 @@ class OrderController extends Controller
      */
     public function create()
     {
-        //
+        // Para crear un pedido, necesito la lista de clientes para el desplegable
+        $clients = Client::all();
+        return view('orders.create', compact('clients'));
     }
 
     /**
@@ -28,7 +33,19 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validación
+        $request->validate([
+            'numero_pedido' => 'required|unique:orders',
+            'client_id' => 'required|exists:clients,id', // El cliente debe existir
+            'fecha' => 'required|date',
+            'estado' => 'required|in:pendiente,enviado,entregado,cancelado',
+            'total' => 'required|numeric|min:0',
+        ]);
+
+        Order::create($request->all());
+
+        return redirect()->route('orders.index')
+                         ->with('success', 'Pedido creado correctamente.');
     }
 
     /**
@@ -44,7 +61,8 @@ class OrderController extends Controller
      */
     public function edit(Order $order)
     {
-        //
+        $clients = Client::all(); // Necesitamos la lista para el <select>
+        return view('orders.edit', compact('order', 'clients'));
     }
 
     /**
@@ -52,7 +70,18 @@ class OrderController extends Controller
      */
     public function update(Request $request, Order $order)
     {
-        //
+        $request->validate([
+            'numero_pedido' => 'required|unique:orders,numero_pedido,' . $order->id, // Ignora su propio ID al validar único
+            'client_id' => 'required|exists:clients,id',
+            'fecha' => 'required|date',
+            'estado' => 'required|in:pendiente,enviado,entregado,cancelado',
+            'total' => 'required|numeric|min:0',
+        ]);
+
+        $order->update($request->all());
+
+        return redirect()->route('orders.index')
+                         ->with('success', 'Pedido actualizado correctamente.');
     }
 
     /**
@@ -60,6 +89,8 @@ class OrderController extends Controller
      */
     public function destroy(Order $order)
     {
-        //
+        $order->delete();
+        return redirect()->route('orders.index')
+                         ->with('success', 'Pedido eliminado.');
     }
 }

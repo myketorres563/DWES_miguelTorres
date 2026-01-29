@@ -111,3 +111,19 @@ Y ahora tendriamos que añadirle funcionalidad a la funcion update
 Y ahora mismo tendriamos el CRUD completo de cliente
 
 ![1769175464820](image/README/1769175464820.png)
+
+Ya tendriamos el CRUD de clientes completo y funcional 
+
+Ahora nos vamos a OrderController en el "use" añadimos el \Client y a demas rellenamos la funcion de index y de create
+
+![1769430362046](image/README/1769430362046.png)
+
+Ahora dentro de view creamos la carpeta orders y dentro el archivo index
+
+![1769430593149](image/README/1769430593149.png)
+
+Y pues seguimos todos los pasos que hemos echo para el CRUD de cliente pero con orders
+
+![1769431963358](image/README/1769431963358.png)
+
+![1769431973138](image/README/1769431973138.png)
