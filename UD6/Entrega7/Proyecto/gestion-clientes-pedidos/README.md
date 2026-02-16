@@ -112,7 +112,7 @@ Y ahora mismo tendriamos el CRUD completo de cliente
 
 ![1769175464820](image/README/1769175464820.png)
 
-Ya tendriamos el CRUD de clientes completo y funcional 
+Ya tendriamos el CRUD de clientes completo y funcional
 
 Ahora nos vamos a OrderController en el "use" añadimos el \Client y a demas rellenamos la funcion de index y de create
 
@@ -127,3 +127,6 @@ Y pues seguimos todos los pasos que hemos echo para el CRUD de cliente pero con 
 ![1769431963358](image/README/1769431963358.png)
 
 ![1769431973138](image/README/1769431973138.png)
+
+
+**[Enlace](https://drive.google.com/file/d/1_1ahUB3Q1j_EwZBGuCdEZ8YWTuknxRSS/view?usp=sharing)**
