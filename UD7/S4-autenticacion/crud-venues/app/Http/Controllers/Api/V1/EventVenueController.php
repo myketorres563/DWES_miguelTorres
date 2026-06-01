@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\EventVenue;
+use App\Http\Requests\StoreEventVenueRequest;
+use App\Http\Requests\UpdateEventVenueRequest;
 
 class EventVenueController extends Controller
 {
